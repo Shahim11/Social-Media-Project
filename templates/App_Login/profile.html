@@ -1,0 +1,25 @@
+{% extends 'navbar.html' %}
+{% load crispy_forms_tags %}
+
+{%block title_block%}{{title}}{%endblock%}
+
+{%block css_block%}
+
+{%endblock%}
+
+{%block body_block%}
+
+<form method="POST" enctype="multipart/form-data">
+  {{form|crispy}}
+  {% csrf_token %}
+  <button type="submit" name="button" class='btn btn-primary'>Submit</button>
+</form>
+
+{% endblock %}
+
+
+
+{% comment %} test_user || kJxQ!DMdW!X@v8w {% endcomment %}
+{% comment %} test_user_2 || V4TW!bd4D9TafB4 {% endcomment %}
+{% comment %} test_user_3 || SaGrVnxPx7qL@s! {% endcomment %}
+{% comment %} test_user_4 || @XaFnAAnmeVuHg3 {% endcomment %}
